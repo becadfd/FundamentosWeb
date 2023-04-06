@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap');
+
 *{
     padding: 0;
     margin: 0;
@@ -11,12 +13,15 @@
     --color-Nav: #E41AE8;
     --color-Hover: #A396DA;
     --color-Letra: #E41AE8;
+    --color-OldLace: #FDF5E6; 
 
 }
 
-main{
-    background-color: var(--color-Pink) ;
+body{
+    background-color: var(--color-OldLace);
+    font-family: 'Raleway', sans-serif;
 }
+
 .center{
     color: var(--color-Letra);
     text-align: center;
@@ -26,51 +31,66 @@ main{
     text-align: justify;
 }
 
-.tm-social{
-    width: 50px;
-    height: 50px;
- }
-
- 
 nav{
     font-size: 20px;
     gap: 10px;
     background-color: var(--color-Banner);
     padding-right: 10px;
     align-items: center;
+    color: white;
 
+}
+
+h1{
+    background-color: var(--color-Banner);
+    color: white;
+    text-align: center;
+}
+
+h2{
+padding: 20px;
 }
 
 .menu-items{
     display:flex;
-    justify-content: flex-end;
+    justify-content: center;
     gap: 20px;
 }
 
-
-
-
 nav, ul, a{ 
     list-style: none;
-    text-decoration: none;
-    color: #ffffff;
-   }
+    text-decoration: none; 
+    color: white;
+    transition: 0.3s;
+}
 
 .navbar a:hover{
         color: var(--color-Thistle);
-    }
+        background-color: var(--color-OldLace);
+        padding: 0 1.3rem;
+        border-radius: 4px;
+}
 
  .banner{
     display: flex;
     justify-content: center;    
     align-items: center;
-    color: var(--color-Letra);
+    color: var(--color-Banner);
     background: var(--color-Thistle);
     font-size: 20px;
     width: 70%;
-    margin: 0 auto;
     gap: 20px;
-    padding: 10px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+
+.textos {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-weight: 300;
 }
 
 img{
@@ -78,13 +98,53 @@ img{
     border-radius: 50%;
 }
 
+
+.foto-responsiva{
+width: max(250px, 25%);
+object-fit: contein;
+}
+
 .video{
     width: 50%;
     aspect-ratio: 16/9;
     margin: 0 auto;
     display: block;
+    padding: 20px;
+}
+
+.contato-banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 20px;
+    color: var(--color-Letra);
 }
 
 footer{
     background-color: var(--color-Thistle);
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.tm-social{
+    width: 50px;
+    height: 50px;
+ }
+
+.mainFlex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+  }
+
+@media (max-width: 768px) {
+    .banner{
+    flex-direction: column-reverse;
+}
+    
 }
