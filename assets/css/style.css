@@ -1,150 +1,188 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,600&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --color-Pink: #FFC0CB;
-    --color-Thistle: #D8BFD8;
-    --color-Banner: #A33AC9;
-    --color-Nav: #E41AE8;
-    --color-Hover: #A396DA;
-    --color-Letra: #E41AE8;
-    --color-OldLace: #FDF5E6; 
-
+:root {
+  --color-Pink: #ffc0cb;
+  --color-Thistle: #d8bfd8;
+  --color-Banner: #a33ac9;
+  --color-Nav: #e41ae8;
+  --color-Hover: #a396da;
+  --color-Letra: #e41ae8;
+  --color-OldLace: #fdf5e6;
 }
 
-body{
-    background-color: var(--color-OldLace);
-    font-family: 'Raleway', sans-serif;
+body {
+  background-color: var(--color-OldLace);
+  font-family: "Raleway", sans-serif;
 }
 
-.center{
-    color: var(--color-Letra);
-    text-align: center;
+.center {
+  color: var(--color-Letra);
+  text-align: center;
 }
 
-.justify{
-    text-align: justify;
+.justify {
+  text-align: justify;
 }
 
-nav{
-    font-size: 20px;
-    gap: 10px;
-    background-color: var(--color-Banner);
-    padding-right: 10px;
-    align-items: center;
-    color: white;
-
+nav {
+  font-size: 20px;
+  gap: 10px;
+  background-color: var(--color-Banner);
+  padding-right: 10px;
+  color: white;
 }
 
-h1{
-    background-color: var(--color-Banner);
-    color: white;
-    text-align: center;
+h1 {
+  background-color: var(--color-Banner);
+  color: white;
+  text-align: center;
+  padding: 0.7rem;
 }
 
-h2{
-padding: 20px;
+h2 {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
 }
 
-.menu-items{
-    display:flex;
-    justify-content: center;
-    gap: 20px;
+.menu-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-nav, ul, a{ 
-    list-style: none;
-    text-decoration: none; 
-    color: white;
-    transition: 0.3s;
+nav,
+ul,
+a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
 }
 
-.navbar a:hover{
-        color: var(--color-Thistle);
-        background-color: var(--color-OldLace);
-        padding: 0 1.3rem;
-        border-radius: 4px;
+.navbar a:hover {
+  color: var(--color-Thistle);
+  background-color: var(--color-OldLace);
+  padding: 0 1.3rem;
+  border-radius: 4px;
 }
 
- .banner{
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-    color: var(--color-Banner);
-    background: var(--color-Thistle);
-    font-size: 20px;
-    width: 70%;
-    gap: 20px;
-    padding: 1.5rem;
-    border-radius: 12px;
-    margin: 0 auto;
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--color-Banner);
+  background: var(--color-Thistle);
+  font-size: 1rem;
+  width: 70%;
+  gap: 20px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin: 2rem auto;
 }
 
 .textos {
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    font-weight: 300;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-weight: 300;
 }
 
-img{
-    width: 25%;
-    border-radius: 50%;
+.icone {
+  width: 25%;
+  border-radius: 50%;
 }
 
-
-.foto-responsiva{
-width: max(250px, 25%);
-object-fit: contein;
+.foto-responsiva {
+  width: max(250px, 25%);
+  object-fit: contein;
 }
 
-.video{
-    width: 50%;
-    aspect-ratio: 16/9;
-    margin: 0 auto;
-    display: block;
-    padding: 20px;
+.video {
+  width: 50%;
+  aspect-ratio: 16/9;
+  margin: 0 auto;
+  display: block;
+  padding: 20px;
 }
 
-.contato-banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    width: 100%;
-    margin: 0 auto;
-    gap: 20px;
-    color: var(--color-Letra);
+.contato-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  margin: 0 auto;
+  gap: 20px;
+  color: var(--color-Letra);
 }
 
-footer{
-    background-color: var(--color-Thistle);
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+.formulario input,
+textarea,
+button {
+  padding: 1%;
+  border-radius: 0.5rem;
+  border: 1px var(--color-Banner) solid;
+  background-color: var(--color-Thistle);
 }
 
-.tm-social{
-    width: 50px;
-    height: 50px;
- }
+.formulario button {
+  font-size: 1rem;
+  transition: 0.35s;
+  padding: 2;
+  height: 2.2rem;
+  background-color: var(--color-Thistle);
+  color: var(--color-Letra);
+}
+
+.formulario button:hover {
+  size: 42%;
+  font-size: 110%;
+  border-radius: 0.5rem;
+  background-color: var(--color-Hover);
+  color: var(--color-OldLace);
+}
+
+footer {
+  background-color: var(--color-Thistle);
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.tm-social {
+  width: 50px;
+  height: 50px;
+}
 
 .mainFlex {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80vh;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80vh;
+}
 
 @media (max-width: 768px) {
-    .banner{
+  .banner {
     flex-direction: column-reverse;
+  }
 }
-    
+
+/*
+  inserindo as classes exclusivas da página Babys
+*/
+.bb-icone {
+  width: 40%;
+  border-radius: 50%;
+}
+
+p {
+  text-align: left;
 }
